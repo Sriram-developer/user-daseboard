@@ -1,6 +1,5 @@
 import {
 	HiOutlineViewGrid,
-	HiOutlineCube,
 	HiOutlineShoppingCart,
     HiOutlineUsers,
 	HiOutlineDocumentText,
@@ -8,6 +7,8 @@ import {
 	HiOutlineQuestionMarkCircle,
 	HiOutlineCog
 } from 'react-icons/hi'
+
+import { MdFormatListBulleted } from 'react-icons/md'
 
 export const DASHBOARD_SIDEBAR_LINKS = [
 	{
@@ -17,10 +18,10 @@ export const DASHBOARD_SIDEBAR_LINKS = [
 		icon: <HiOutlineViewGrid />
 	},
 	{
-		key: 'products',
-		label: 'Products',
-		path: '/products',
-		icon: <HiOutlineCube />
+		key: 'userform',
+		label: 'UserForm',
+		path: '/adduser-form',
+		icon: <MdFormatListBulleted />
 	},
 	{
 		key: 'orders',

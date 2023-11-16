@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Layout from './components/user-shared/Layout';
 import Daseboard from './components/user-shared/Daseboard';
-import Products from './components/user-shared/Products';
+import UserForm from './components/user-shared/AddUserForm';
 
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
     <Routes>
         <Route path="/" element={<Layout />}>
         <Route index element={<Daseboard />} />
-        <Route path="products" element={<Products />} />
+        <Route path="adduser-form" element={<UserForm />} />
           </Route>
     </Routes>
 </Router>
