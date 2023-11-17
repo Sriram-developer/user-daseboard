@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Layout from './components/user-shared/Layout';
-import Daseboard from './components/user-shared/Daseboard';
+import Daseboard from './components/pages/Daseboard';
 import UserForm from './components/user-shared/AddUserForm';
 
 

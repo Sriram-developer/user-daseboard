@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import { HiOutlineChatAlt, HiOutlineSearch, HiOutlineBell } from 'react-icons/hi'
 import { Popover, Transition, Menu } from '@headlessui/react'
 import classNames from 'classnames'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 
 
 export default function Header() {
@@ -13,6 +13,15 @@ export default function Header() {
         <HiOutlineSearch fontSize={20} className='text-gray-400 absolute top-1/2 -translate-y-1/2 left-3'/>
         <input type="text" placeholder='Search ...' className='text-sm focus:outline-none active:outline-none h-10 w-[24rem] border border-gray-300  rounded-sm pl-11 px-4' />
       </div>
+	  <div className='flex items-center gap-2 ml-auto mr-3'>
+        <div className='relative'>
+          <Link to="/adduser-form">
+            <button className="bg-green-600 text-white py-2 px-2 rounded-md">
+              Add User
+            </button>
+          </Link>
+        </div>
+		</div>
       <div className='flex items-center gap-2 mr-2'>
       <Popover className="relative">
 					{({ open }) => (
